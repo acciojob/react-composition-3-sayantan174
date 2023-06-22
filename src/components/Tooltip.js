@@ -15,10 +15,10 @@ const Tooltip = (props) => {
         }}
         className="tooltip"
       >
-        <div>{props.children[0]}</div>
+        <div><div>{props.children[0]}</div></div>
       </h1>
       {f2 && <p style={{position:"absolute"}} className="tooltiptext"><div>{props.text[1]}</div></p>}
-      <h2
+      <p
         onMouseOver={() => {
           setF2(true);
         }}
@@ -28,7 +28,7 @@ const Tooltip = (props) => {
         className="tooltip"
       ><div>{props.children[1]}</div>
         
-      </h2>
+      </p>
     </>
   );
 };
