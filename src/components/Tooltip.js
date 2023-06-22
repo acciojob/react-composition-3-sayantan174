@@ -5,7 +5,7 @@ const Tooltip = (props) => {
   const [f2, setF2] = useState(false);
   return (
     <>
-      {f1 && <p className="tooltiptext">{props.text[0]}</p>}
+      {f1 && <h2 style={{position:"absolute"}} className="tooltiptext">{props.text[0]}</h2>}
       <h1
         onMouseOver={() => {
           setF1(true);
@@ -17,7 +17,7 @@ const Tooltip = (props) => {
       >
         {props.children[0]}
       </h1>
-      {f2 && <p className="tooltiptext">{props.text[1]}</p>}
+      {f2 && <p style={{position:"absolute"}} className="tooltiptext">{props.text[1]}</p>}
       <h2
         onMouseOver={() => {
           setF2(true);
