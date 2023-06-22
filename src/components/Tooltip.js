@@ -26,7 +26,7 @@ const Tooltip = (props) => {
           setF2(false);
         }}
         className="tooltip"
-      ><div>{props.children[1]}</div>
+      ><div>{props.text[1]}</div>
         
       </p>
     </>
