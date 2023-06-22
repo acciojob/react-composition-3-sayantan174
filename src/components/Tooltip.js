@@ -15,7 +15,7 @@ const Tooltip = (props) => {
         }}
         className="tooltip"
       >
-        <div>{props.children[0]}</div>
+        <div><div>{props.children[0]}</div></div>
       </h2>
       {f2 && <p style={{position:"absolute"}} className="tooltiptext"><div>{props.text[1]}</div></p>}
       <p
